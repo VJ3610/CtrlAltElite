@@ -181,7 +181,7 @@ h1{
   border: 1px solid black;
   padding: 10px;
   width: 1000px;
-  height: 200px;
+  height: auto;
   align-items: center;
   justify-content: center;
   background-color: transparent;
@@ -221,16 +221,18 @@ ul {
 
 label {
     font-weight: bold;
+    text-align: left ;
+    color:#589afc
 }
 
 input, textarea {
-    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    
 }
 
 button {
@@ -253,7 +255,7 @@ section {
 
 #contact {
     margin: auto;
-    max-width: 700px;
+    max-width: 500px;
     text-align: center;
     font-weight: bold;
     display: block;

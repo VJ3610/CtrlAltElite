@@ -44,8 +44,6 @@
 
 .dropdown-content a:hover {
     background-color: #11191373;
-    color: #fff;
-    border-bottom: 2px solid #fff; /* Add an underline on hover */
     color : rgba(124, 132, 124, 0.8);
     transform: scale(1.2);
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -97,7 +95,6 @@ nav a{
   }
   
 nav a:hover {
-    border-bottom: 2px solid #fff; /* Add an underline on hover */
     color : rgba(255, 0, 0, 0.912);
     transform: scale(1.5);
     transition: background-color 0.3s ease, transform 0.3s ease;

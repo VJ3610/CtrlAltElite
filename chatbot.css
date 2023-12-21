@@ -1,0 +1,79 @@
+
+.chatbot{
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    width: 420px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 120px 0 rgba(0,0,0,0.1),0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.chatbot header{
+    padding :16px o;
+    text-align: center;
+}
+
+.chatbot header h1{
+    font-size: 1.4rem;
+}
+
+.chatbot .chatbox{
+    height: 510px;
+    overflow-y: auto ;
+    padding: 30px 20px 70px;
+}
+.chatbox .chat{
+    display: flex;
+}
+
+.chatbox .incomming span{
+    height:32px;
+    width: 32px;
+    text-align: center;
+    align-self: flex-end;
+    line-height: 32px;
+    border-radius: 4px;
+    margin:0 10px 7px 0;
+}
+
+.chatbox .outgoing{
+    margin: 20px 0;
+    justify-content: flex-end;
+}
+
+.chatbox ,.chat p{
+  border-radius: 10px 10px 10px 0;
+}
+
+.chatbot .chat-input{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    padding: 5px 20px ;
+    border-top:1px solid #ccc;
+}
+
+.chat-input textarea{
+    height: 55px;
+    width: 100px;
+    border: none;
+    outline: none;
+    font-size:0.95rem;
+    resize: none;
+    padding: 16px 15px 16px 0;
+}
+
+.chat-input span{
+     align-self: flex-end;
+     height: 55px;
+     line-height: 55px;
+     font-size: 1.35rem;
+     cursor: pointer;
+     visibility: hidden;
+}
+
+.chat-input textarea{
+    visibility: visible;
+}

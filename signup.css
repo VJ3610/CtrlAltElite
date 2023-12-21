@@ -6,6 +6,21 @@
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(143, 143, 197, 0.8)), url(build3.jpg);
+    box-sizing: border-box;
+    background-attachment: fixed ;
+    background-size: cover;
+    color: #333;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:16px;
+    text-align: center;
+}
+
 .dropdown-menu a {
     display: flex;
     padding: 10px;
@@ -94,7 +109,7 @@ nav  {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Set a higher z-index to ensure it appears above other elements */
+    z-index: 100; /* Set a higher z-index to ensure it appears above other elements */
   }
 
 .navbar-nav {
@@ -208,7 +223,7 @@ form p a{
     border: 0;
     outline: 0;
     cursor: pointer;
-    transition: background 1s;
+    /* transition: background 1s; */
 }
 
 .input-group{

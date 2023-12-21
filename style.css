@@ -111,18 +111,6 @@ nav  {
     padding: fixed;
 }
 
-.nav-bar{
-    
-    display: inline;
-
-    padding: 0;
-    overflow: hidden;
-    padding: 10px;
-
-
-    position: relative;
-}
-
 .navbar {
     display: flex;
     justify-content: center;

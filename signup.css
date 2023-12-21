@@ -3,99 +3,111 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-.dropdown {
-    display: inline-block;
-    cursor: pointer;
-}
+.dropdown-menu a {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Text color of the dropdown menu items */
+  }
 
-.icon-bar {
-    width: 30px;
-    height: 3px;
-    background-color: #e5e1dcf9;
-    margin: 6px;
-    transition: 0.4s ease-in-out;
-}
-
-.dropdown-content {
-    display: none;
+  .dropdown-menu {
     position: absolute;
-    background-color: #373836;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(56, 55, 52, 0.893);
-    z-index: 1;
-}
+    background-color: #fff; /* Background color of the dropdown menu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    z-index: 1; /* Ensure the dropdown appears above other elements */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
 
-.dropdown:hover .icon-bar {
-    background-color: #1e251d;
-}
+.dropdown-menu a:hover {
+    background-color: #f2f2f2;
+  }
+
+  .dropdown-menu li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the spacing between items */
+  }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
+  }
 
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #11191373;
-    color : rgba(124, 132, 124, 0.8);
-    transform: scale(1.2);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
+.nav-item {
+    position: relative;
+  }
 /* General Styles for Header and Navigation */
-header {
-    background-color: rgba(0, 0, 0, 0.8); /* Add your desired background color */
-    color: rgb(192, 0, 0); /* Set text color to white or your preferred color */
-    padding: 5px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius:15px ;
-}
-  
-nav ul {
+.container-fluid {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    padding: 0;
-    overflow: hidden;background-color: #333;
+    padding-left: 20%;
+    padding-top: 100%;
     padding: 10px;
-    background-color: rgba(169, 169, 169, 0.3);
-    padding: 10px;
-    clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
-}
-  
-nav li {
-    display: flex;
-    margin-right: 20px; /* Adjust spacing between menu items as needed */
-}
-  
-nav a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
+   background-color: rgba(169, 169, 169, 0.3);
+    padding: 20px;
+    border-radius: 10px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    align-items: center;
+    font-size: 16px;
+}
+
+.nav-item {
+    display: flex;
+    margin-right: 20px; /* Adjust spacing between menu items as needed*/
+}
+    
 .large-link {
-    font-size: 18px; /* Set the default font size */
-    padding: 10px 20px; /* Set padding to increase the clickable area */
+    font-size: 18px;
+    display:flex;
     text-decoration: none; /* Remove underline for the link */
     display: inline-block; /* Make the link behave like a block element */
     transition: transform 0.3s ease-in-out;
+}
+
+nav  {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin:auto;
+    padding: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(169, 169, 169, 0.3);
+    backdrop-filter: blur(10px); 
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Set a higher z-index to ensure it appears above other elements */
   }
-  
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
 nav a:hover {
-    color : rgba(255, 0, 0, 0.912);
+    display: block;
+    color: #f0f0f0; /* Change the color on hover */
     transform: scale(1.5);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -111,15 +123,6 @@ nav a:hover {
         margin-right: 0;
         margin-bottom: 10px;
     }
-}
-
-.container{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)), url(../Photos/build.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
 }
 
 .form-box{

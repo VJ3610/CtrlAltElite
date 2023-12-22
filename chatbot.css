@@ -13,7 +13,7 @@ body {
   height: 100vh;
 }
 
-.card {
+.chatbot {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   border-radius: 10px;
@@ -24,7 +24,7 @@ body {
   flex-direction: column;
 }
 
-.header {
+header {
   background-color: #4CAF50;
   color: white;
   text-align: center;
@@ -33,35 +33,46 @@ body {
   border-bottom: 2px solid #ddd;
 }
 
-.chat-area {
+.chatbox {
   flex: 1;
   padding: 15px;
+  width:80vh;
+  height:80vh;
   overflow-y: auto;
+  list-style: none;
 }
 
-.message {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.bot-response, #user-response {
+/* .incoming .bot-response {
   background-color: #4CAF50;
   color: white;
   padding: 10px;
   border-radius: 10px;
   max-width: 70%;
   word-wrap: break-word;
+  margin-bottom: 15px;
+} */
+
+.incoming .bot-response {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  margin:none;
+  border-radius: 6px 6px 6px 2.5px;
+  display: inline-block; 
 }
 
-.input-section {
+
+#input-section {
   display: flex;
   align-items: center;
   padding: 15px;
   border-top: 2px solid #ddd;
 }
 
-#input {
+#user-message {
   flex: 1;
   padding: 10px;
   border: none;

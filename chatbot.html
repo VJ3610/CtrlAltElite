@@ -10,15 +10,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
   </head>
 <body>
-  <div class="card">
-    <div class="header">
+  <div class="chatbot">
+    <header>
       <h1>Paneo BOt</h1>
-     </div>
-     <div id="message-section" class="chat-area">
-       <div class="message" class="bot"><span class="bot-response">Hi there 👋<br>How can I help you</span></div>
-     </div>
-     <div id="input-section">
-      <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+       <p class="bot-response" id="chat-display">Bot : Hii I am Paneo 👋 ,<br> How can I help you ?</p>
+      </li>
+    </ul>
+    <div id="input-section">
+      <input id="user-message" type="text" placeholder="Type a message . . ." autocomplete="off" autofocus="autofocus" required/>
       <button class="send" onclick="sendMessage()">
         <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
       </button>

@@ -18,6 +18,9 @@ body {
     text-align: center;
 }
 
+.chat-area{
+    background: #0056b3;
+}
 header {
     color: #f8f8f8;
     display: flex;

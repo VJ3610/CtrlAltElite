@@ -17,7 +17,7 @@ document.getElementById("signinBtn").onclick = function() {
         if (enteredEmail === correctUsername && enteredPassword === correctPassword) {
             if (enteredEmail.trim() !== '' && enteredPassword.trim() !== '') {
                 // Sign in successful
-                window.location.href = '../Main web/index.html';
+                window.location.href = './index.html';
             }
         } else {
             // Incorrect username or password
@@ -47,11 +47,11 @@ document.getElementById("signupBtn").onclick = function() {
         if (enteredEmail === correctUsername && enteredPassword === correctPassword && enteredName === correctName) {
             if (enteredName.trim() !== '' && enteredEmail.trim() !== '' && enteredPassword.trim() !== '') {
                 // Sign up successful
-                window.location.href = '../Main web/index.html';
+                window.location.href = './index.html';
             }
         } else {
             // Username is already used or invalid input
             // You might want to display an error message on the webpage instead of using an alert
-        }
-    }
+        }
+    }
 };

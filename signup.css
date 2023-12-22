@@ -147,9 +147,10 @@ nav a:hover {
     top: 5%;
     left: 50%;
     transform: translate(-50%,50%);
-    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
     padding: 50px 60px 70px;
     text-align: center;
+    backdrop-filter:blur(10%);
     border-radius: 10%;
     box-shadow: 10px 10px 20px 0px rgba(8, 7, 15, 0.75);
 }
@@ -165,7 +166,7 @@ nav a:hover {
     content: '';
     width: 30px;
     height: 4px;
-    border-radius: 3px;
+    border-radius: 4px;
     background: #3c00a0;
     position: absolute;
     bottom: -12px;
@@ -174,9 +175,9 @@ nav a:hover {
 }
 
 .input-field{
-    background: #eaeaea;
+    background: #ffffff;
     margin: 20px 0;
-    border-radius: 3px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     max-width: 650px;
@@ -190,6 +191,7 @@ input{
     border: 0;
     outline: 0;
     padding: 18px 15px;
+    border-radius: 4px;
 }
 
 .input-field i{
